@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Tic‑Tac‑Toe · X/O different colors</title>
+  <!-- Link to external CSS (style.css) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>⨉ TIC · TAC · TOE ○</h1>
+
+    <!-- status panel (in-game only) -->
+    <div class="status-panel" id="statusMessage">Player X's turn</div>
+
+    <!-- board container (dynamic) -->
+    <div class="board" id="boardContainer"></div>
+
+    <!-- new game button (always visible, but we also have one in win screen) -->
+    <button class="restart-btn" id="restartBtn">↻ NEW GAME</button>
+    <div class="footer-note">tap any cell · X = blue · O = green</div>
+  </div>
+
+  <!-- WIN/DRAW MODAL SCREEN (hidden by default) -->
+  <div class="win-screen" id="winScreen">
+    <div class="win-card">
+      <div class="win-message" id="winMessage">🏆 Player X wins! 🏆</div>
+      <button class="win-newgame-btn" id="winNewGameBtn">↻ PLAY AGAIN</button>
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript (script.js) -->
+  <script src="script.js"></script>
+</body>
+</html>
